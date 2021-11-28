@@ -108,7 +108,7 @@ function Post({id, username,userImg,img,caption}) {
             {comments.length > 0 && (
                 <>
                 {comments.length > 0?
-                        <p className="font-bold ml-2 pl-3"> {comments.length} comments</p>:
+                        <p className="font-bold ml-2 pl-3"> {comments.length} {comments.length >1? "comments":"comment"}comments</p>:
                         null
                     }
                 <div className="ml-10 h-20 overflow-y-scroll 
